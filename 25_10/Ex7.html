@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios – (Estrutura de Repetição)</title>
+</head>
+<body>
+    
+    <script>
+
+        let qtdEntrevistas = 5, idade, procedencia, qtdCapital = 0, qtdMaior18
+        for(let i=1; i<= qtdEntrevistas; i++){
+            idade = parseFloat(prompt('Digite a idade'))
+            procedencia = parseInt(prompt('0 - Capital\n1 - Interior\n2 - Outro Estado'))
+
+            if(procedencia == 0){
+                qtdCapital++
+            }
+            if(idade >= 18)
+                qtdMaior18++
+        }
+        let perc = (qtdMaior18+100)/qtdEntrevistas
+        console.log('A quantidade de pessoas vindo da capital é de '+qtdCapital)
+
+    </script>
+
+</body>
+</html>

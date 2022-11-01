@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios – (Estrutura de Repetição)</title>
+</head>
+<body>
+    
+    <script>
+
+        let pCusto, pVenda, tipo, qtdCalcado = 0, qtdVestuario = 0
+        for(let i = 1; i<=150; i++){
+            pCusto = parseFloat(prompt('Digite o preço de custo'))
+            pVenda = parseFloat(prompt('Digite o preço de venda'))
+            tipo = prompt('V - Vestuário\nC - Calçado')
+
+            if(tipo == 'c' || tipo == 'C'){
+                qtdCalcado++
+            }
+
+            if(tipo == 'v' || tipo == 'V'){
+                qtdVestuario++
+            }
+
+            lucro = pVenda - pCusto
+            console.log('Lucro: R$'+lucro)
+        }
+
+        console.log('A quantidade total de calçados é de '+qtdCalcado)
+        console.log('A quantidade total de vestuário é de '+qtdVestuario)
+
+    </script>
+
+</body>
+</html>
